@@ -1,0 +1,13 @@
+[ {
+  "name" : "Draxler Alexander",
+  "ipWork" : "192.168.1.4",
+  "ipVpn" : "8.8.8.8"
+}, {
+  "name" : "Aundara Hawara",
+  "ipWork" : "0.0.0.0",
+  "ipVpn" : "132.3.45.5"
+}, {
+  "name" : "Hugo Boss",
+  "ipWork" : "1.1.1.1",
+  "ipVpn" : "84.1.56.6"
+} ]

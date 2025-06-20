@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>Ping Mission</h1>
+  <button (click)="start()" [disabled]="loading">
+    {{ loading ? 'Running...' : 'Start Ping Mission' }}
+  </button>
+  <div *ngIf="progress !== null" class="progress-section">
+    <label>Progress: {{ progress }}%</label>
+    <div class="progress-bar">
+      <div class="progress-bar-fill" [style.width.%]="progress"></div>
+    </div>
+  </div>
+  <div *ngIf="resultEntries.length > 0" class="result-section">
+    <h2>Results</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let entry of resultEntries">
+          <td>{{ entry.name }}</td>
+          <td>
+            <span [ngClass]="{'success': entry.status === 'Reachable', 'fail': entry.status === 'Unreachable'}">
+              {{ entry.status }}
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="error" class="error">
+    {{ error }}
+  </div>
+</div>

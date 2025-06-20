@@ -1,0 +1,46 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Angular build output
+dist/
+out-tsc/
+.angular/
+coverage/
+
+# Maven/Java build output
+target/
+
+# Java build output
+*.jar
+*.war
+*.ear
+
+# Ignore all JARs in pingbackend
+pingbackend/**/*.jar
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+.env
+.env.*
+
+# Maven wrapper directory
+.mvn/
+
+# Docker files
+docker/
