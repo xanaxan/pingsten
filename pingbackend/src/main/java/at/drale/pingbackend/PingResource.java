@@ -17,6 +17,9 @@ public class PingResource {
     private static final Map<String, Integer> progressMap = new ConcurrentHashMap<>();
     private static final Map<String, Map<String, String>> resultMap = new ConcurrentHashMap<>();
 
+    private static final String RESULT_CACHE_FILE = "pingresults-cache.json";
+    private static volatile boolean cacheValid = false;
+
     public static class Entry {
         public String name;
         public String ipWork;
@@ -26,21 +29,27 @@ public class PingResource {
     @POST
     @Path("/start")
     @Produces(MediaType.APPLICATION_JSON)
-    public Map<String, String> startPingMission() {
+    public synchronized Map<String, String> startPingMission() {
         String taskId = UUID.randomUUID().toString();
         progressMap.put(taskId, 0);
+        cacheValid = false; // Invalidate cache on new mission
 
         // Start the ping task asynchronously
         new Thread(() -> {
             Map<String, String> results = getPingResults(taskId);
             resultMap.put(taskId, results);
+            // Save results to cache file
+            try {
+                ObjectMapper mapper = new ObjectMapper();
+                mapper.writeValue(new File(RESULT_CACHE_FILE), results);
+                cacheValid = true;
+            } catch (Exception e) {
+                // Optionally log error
+            }
         }).start();
 
         return Map.of("taskId", taskId);
     }
-
-    //ss
-
 
     @GET
     @Path("/progress/{taskId}")
@@ -52,7 +61,20 @@ public class PingResource {
     @GET
     @Path("/result/{taskId}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Map<String, String> getResult(@PathParam("taskId") String taskId) {
+    public synchronized Map<String, String> getResult(@PathParam("taskId") String taskId) {
+        // If cache is valid, read from file
+        if (cacheValid) {
+            try {
+                ObjectMapper mapper = new ObjectMapper();
+                File cacheFile = new File(RESULT_CACHE_FILE);
+                if (cacheFile.exists()) {
+                    return mapper.readValue(cacheFile, new TypeReference<Map<String, String>>() {});
+                }
+            } catch (Exception e) {
+                // Optionally log error
+            }
+        }
+        // Fallback to in-memory result
         return resultMap.getOrDefault(taskId, Map.of());
     }
 

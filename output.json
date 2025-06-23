@@ -1,0 +1,181 @@
+[ {
+  "name" : "Braitner Oliver",
+  "ipWork" : "10.212.164.101",
+  "ipVpn" : "172.23.12.29"
+}, {
+  "name" : "Bleicher Stephan",
+  "ipWork" : "10.212.164.114",
+  "ipVpn" : "172.23.12.64"
+}, {
+  "name" : "Dolar Rene",
+  "ipWork" : "10.212.164.175",
+  "ipVpn" : "172.23.12.6"
+}, {
+  "name" : "Draxler Alexander",
+  "ipWork" : "10.212.164.118",
+  "ipVpn" : "172.23.12.31"
+}, {
+  "name" : "Tod Oliver",
+  "ipWork" : "10.212.164.150",
+  "ipVpn" : "172.23.12.66"
+}, {
+  "name" : "Führer Johannes",
+  "ipWork" : "10.212.164.198",
+  "ipVpn" : "172.23.12.34"
+}, {
+  "name" : "Hager Michael",
+  "ipWork" : "10.112.164.227",
+  "ipVpn" : "172.23.12.12"
+}, {
+  "name" : "Heiderer Thomas",
+  "ipWork" : "10.212.164.204",
+  "ipVpn" : "172.23.12.36"
+}, {
+  "name" : "Fraiss Richard",
+  "ipWork" : "10.212.164.199",
+  "ipVpn" : "172.23.12.9"
+}, {
+  "name" : "Krach Mario",
+  "ipWork" : "10.212.164.139",
+  "ipVpn" : "172.23.12.14"
+}, {
+  "name" : "Müller Patrick",
+  "ipWork" : "10.212.164.163",
+  "ipVpn" : "172.23.12.43"
+}, {
+  "name" : "Pechatschek Marc",
+  "ipWork" : "10.212.164.180",
+  "ipVpn" : "172.23.12.19"
+}, {
+  "name" : "Selner Thomas",
+  "ipWork" : "10.212.164.130",
+  "ipVpn" : "172.23.12.46"
+}, {
+  "name" : "Steinböck Markus",
+  "ipWork" : "10.212.164.207",
+  "ipVpn" : "172.23.12.24"
+}, {
+  "name" : "Zachhalmel Nikolaus ",
+  "ipWork" : "10.212.164.208",
+  "ipVpn" : "172.23.12.81"
+}, {
+  "name" : "Ziegelwanger Lukas",
+  "ipWork" : "10.212.164.157",
+  "ipVpn" : "172.23.12.55"
+}, {
+  "name" : "Simon Bauer",
+  "ipWork" : "10.212.165.50",
+  "ipVpn" : "172.23.12.68"
+}, {
+  "name" : "Neunteufel Rainer",
+  "ipWork" : "10.212.165.14",
+  "ipVpn" : "172.23.12.67"
+}, {
+  "name" : "",
+  "ipWork" : "",
+  "ipVpn" : ""
+}, {
+  "name" : "",
+  "ipWork" : "ITSV Jenkins",
+  "ipVpn" : ""
+}, {
+  "name" : "lvgjenmas02.seu.sozvers.at",
+  "ipWork" : "172.16.109.31",
+  "ipVpn" : ""
+}, {
+  "name" : "lvgjenslav01.seu.sozvers.at",
+  "ipWork" : "172.16.108.25",
+  "ipVpn" : ""
+}, {
+  "name" : "lvgjenslav06.seu.sozvers.at",
+  "ipWork" : "172.16.109.52",
+  "ipVpn" : ""
+}, {
+  "name" : "",
+  "ipWork" : "",
+  "ipVpn" : ""
+}, {
+  "name" : "Worker-01",
+  "ipWork" : "172.16.108.25",
+  "ipVpn" : ""
+}, {
+  "name" : "Worker-06",
+  "ipWork" : "172.16.109.52",
+  "ipVpn" : ""
+}, {
+  "name" : "Worker-oegkn-01",
+  "ipWork" : "172.16.109.15",
+  "ipVpn" : ""
+}, {
+  "name" : "",
+  "ipWork" : "",
+  "ipVpn" : ""
+}, {
+  "name" : "master",
+  "ipWork" : "172.16.108.24",
+  "ipVpn" : ""
+}, {
+  "name" : "slave01",
+  "ipWork" : "172.16.108.25",
+  "ipVpn" : ""
+}, {
+  "name" : "slave02",
+  "ipWork" : "172.16.108.192",
+  "ipVpn" : ""
+}, {
+  "name" : "slave05",
+  "ipWork" : "172.16.109.30",
+  "ipVpn" : ""
+}, {
+  "name" : "noegkk-slave",
+  "ipWork" : "172.16.109.15",
+  "ipVpn" : ""
+}, {
+  "name" : "VPN-12ALWE-CC-1",
+  "ipWork" : "172.23.12.42",
+  "ipVpn" : ""
+}, {
+  "name" : "VPN-12ALWE-CC-2",
+  "ipWork" : "172.23.12.43",
+  "ipVpn" : ""
+}, {
+  "name" : "VPN-12ALWE-CC-3",
+  "ipWork" : "172.23.12.44",
+  "ipVpn" : ""
+}, {
+  "name" : "",
+  "ipWork" : "",
+  "ipVpn" : ""
+}, {
+  "name" : "",
+  "ipWork" : "",
+  "ipVpn" : ""
+}, {
+  "name" : "",
+  "ipWork" : "",
+  "ipVpn" : ""
+}, {
+  "name" : "",
+  "ipWork" : "",
+  "ipVpn" : ""
+}, {
+  "name" : "",
+  "ipWork" : "",
+  "ipVpn" : ""
+}, {
+  "name" : "",
+  "ipWork" : "",
+  "ipVpn" : ""
+}, {
+  "name" : "",
+  "ipWork" : "",
+  "ipVpn" : ""
+}, {
+  "name" : "",
+  "ipWork" : "",
+  "ipVpn" : ""
+}, {
+  "name" : "",
+  "ipWork" : "",
+  "ipVpn" : ""
+} ]

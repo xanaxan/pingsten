@@ -5,11 +5,31 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "ExcelToJsonExporter",
+            "request": "launch",
+            "mainClass": "at.drale.pingbackend.ExcelToJsonExporter",
+            "projectName": "pingbackend"
+        },
+        {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "request": "launch",
+            "name": "Debug Quarkus (pingbackend)",
+            "mainClass": "io.quarkus.runner.GeneratedMain", // or your main class if different
+            "projectName": "pingbackend",
+            "cwd": "${workspaceFolder}/pingbackend",
+            "args": [],
+            "env": {
+                "JAVA_TOOL_OPTIONS": "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"
+            },
+            "console": "integratedTerminal"
         }
     ]
 }
